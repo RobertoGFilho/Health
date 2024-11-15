@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.developer.healthkit</key>
+	<true/>
+	<key>com.apple.developer.healthkit.access</key>
+	<array>
+		<string>health-records</string>
+	</array>
+	<key>com.apple.developer.healthkit.read-privileges</key>
+	<array>
+		<string>HKClinicalTypeIdentifierAllergyRecord</string>
+		<string>HKClinicalTypeIdentifierConditionRecord</string>
+		<string>HKClinicalTypeIdentifierImmunizationRecord</string>
+		<string>HKClinicalTypeIdentifierLabResultRecord</string>
+		<string>HKClinicalTypeIdentifierMedicationRecord</string>
+		<string>HKClinicalTypeIdentifierProcedureRecord</string>
+		<string>HKClinicalTypeIdentifierVitalSignRecord</string>
+	</array>
+	<key>com.apple.developer.healthkit.write-privileges</key>
+	<array>
+		<string>HKClinicalTypeIdentifierAllergyRecord</string>
+		<string>HKClinicalTypeIdentifierConditionRecord</string>
+		<string>HKClinicalTypeIdentifierImmunizationRecord</string>
+		<string>HKClinicalTypeIdentifierLabResultRecord</string>
+		<string>HKClinicalTypeIdentifierMedicationRecord</string>
+		<string>HKClinicalTypeIdentifierProcedureRecord</string>
+		<string>HKClinicalTypeIdentifierVitalSignRecord</string>
+	</array>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.companyname.Health</string>
+	</array>
+	<key>com.apple.security.personal-information.healthkit</key>
+	<true/>
+	<key>com.apple.security.personal-information.healthkit.read-only</key>
+	<true/>
+	<key>com.apple.security.personal-information.healthkit.write-only</key>
+	<true/>
+	<key>com.apple.security.personal-information.healthkit.read-write</key>
+	<true/>
+	<key>com.apple.security.personal-information.healthkit.shared</key>
+	<true/>
+	<key>com.apple.security.personal-information.healthkit.shared.read-only</key>
+	<true/>
+	<key>com.apple.security.personal-information.healthkit.shared.write-only</key>
+	<true/>
+	<key>com.apple.security.personal-information.healthkit.shared.read-write</key>
+	<true/>
+</dict>
+</plist>
+
