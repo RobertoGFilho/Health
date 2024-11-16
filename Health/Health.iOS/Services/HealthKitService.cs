@@ -28,7 +28,6 @@ namespace Health.iOS.Services
 
             if (success.Item2 != null)
             {
-                // Lidar com o erro, por exemplo, lançar uma exceção ou exibir uma mensagem de erro
                 throw new Exception(success.Item2.LocalizedDescription);
             }
 

@@ -1,12 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Health.Views.HealthPage">
+             xmlns:vm="clr-namespace:Health.ViewModels"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="Health.Views.HealthPage"
+             NavigationPage.HasNavigationBar="True"
+             Title="Saúde">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="24"
+            Spacing="12">
+            
+            <microcharts:ChartView 
+                x:Name="chartView" 
+                HeightRequest="200" />
+            
+            <Label 
+                Text="{Binding TotalSteps, StringFormat='{0} passos'}" 
+                HorizontalTextAlignment="End"
+                FontSize="20" />
+
+            <CollectionView ItemsSource="{Binding HealthDataList}" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame
+                                Margin="0,0,2,12"
+                                CornerRadius="12"
+                                HasShadow="False"
+                                BorderColor="WhiteSmoke">
+                                <Grid ColumnDefinitions="*,*">
+                                    <StackLayout>
+                                        <Label Text="{Binding Date, StringFormat='{0:dddd}'}" FontSize="Caption" />
+                                        <Label Text="{Binding Date, StringFormat='{0:M}'}" />
+                                    </StackLayout>                                    
+                                    <StackLayout Grid.Column="1">
+                                        <Label Text="passos" FontSize="Caption" HorizontalTextAlignment="End"/>
+                                        <Label Text="{Binding Steps, StringFormat='{0:M}'}" HorizontalTextAlignment="End"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
