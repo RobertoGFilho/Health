@@ -204,6 +204,9 @@ namespace Health.iOS.Services
 ### Diferenciação avançada de UI e UX entre Android e iOS
 - **Human Interface Guidelines para iOS**: O aplicativo segue as diretrizes de Human Interface Guidelines para proporcionar uma experiência de usuário consistente e intuitiva em dispositivos iOS.
 
+![Saude](https://github.com/user-attachments/assets/2504ad32-1605-4345-ab94-70ac33ff7997)
+
+
 ### Otimização do aplicativo para performance
 - **Threading e tarefas assíncronas**: O aplicativo utiliza threading e tarefas assíncronas para otimizar a performance e garantir uma experiência de usuário fluida.
 
