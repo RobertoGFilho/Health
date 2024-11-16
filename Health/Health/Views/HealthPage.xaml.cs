@@ -41,9 +41,9 @@ namespace Health.Views
                 Entries = entries,
                 LabelTextSize = 30,
                 PointSize = 50,
-                ValueLabelOrientation = Orientation.Horizontal, // Orientação horizontal para ValueLabels
-                LabelOrientation = Orientation.Horizontal, // Orientação horizontal para Labels
-                Margin = 20 // Adicionar margem para aumentar o espaço
+                ValueLabelOrientation = Orientation.Horizontal, 
+                LabelOrientation = Orientation.Horizontal, 
+                Margin = 20 
             };
         }
     }
