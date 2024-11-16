@@ -108,7 +108,7 @@ O Monitor de Saúde Pessoal é um aplicativo completo para monitoramento de ativ
             return stepsList.OrderBy(o=> o.Date).ToList();
         }
 
-        private async Task SaveStepsToDatabaseAsync(List<HealthData> stepsList)
+        private async Task **SaveStepsToDatabaseAsync(List<HealthData> stepsList)**
         {
             foreach (var stepData in stepsList)
             {
